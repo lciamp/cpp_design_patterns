@@ -41,7 +41,7 @@ struct PersistanceManager
 
 int main(int argc, const char * argv[]) {
 
-    Journal journal{"dear diary"};
+    Journal journal("dear diary");
     journal.add_entrie("i ate a bug");
     journal.add_entrie("i cried today");
     journal.add_entrie("it worked");
