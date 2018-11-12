@@ -21,7 +21,7 @@ struct Journal
     
     Journal(const string& title) : title(title){}
     
-    void add_entrie(const string& entry)
+    void add_entry(const string& entry)
     {
         entries.push_back(entry);
     }
@@ -42,9 +42,9 @@ struct PersistanceManager
 int main(int argc, const char * argv[]) {
 
     Journal journal("dear diary");
-    journal.add_entrie("i ate a bug");
-    journal.add_entrie("i cried today");
-    journal.add_entrie("it worked");
+    journal.add_entry("i ate a bug");
+    journal.add_entry("i cried today");
+    journal.add_entry("it worked");
     
     PersistanceManager pm;
     
